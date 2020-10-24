@@ -1,0 +1,137 @@
+@import 'grid.scss';
+
+a {
+  color: #575453;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #575453;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+th {
+  text-align: left;
+}
+tr {
+  height: 50px;
+}
+span {
+  font-family: Nunito;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.row-box {
+  width: 100%;
+  display: grid;
+}
+
+.col-box {
+  height: 100%;
+  float: left;
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-top {
+  align-items: top;
+}
+
+.align-bottom {
+  align-self: end;
+}
+.align-self-center {
+  align-self: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.display-none {
+  display: none !important;
+  transition: opacity 0.5s, padding 0.25s;
+}
+.divisor {
+  width: 80%;
+  border: 1px solid #f4f2f1;
+}
+
+.main-app {
+  padding-left: 218px;
+  overflow-wrap: anywhere;
+}
+
+.main-app-collapse {
+  padding-left: 72px !important;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}

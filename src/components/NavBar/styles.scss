@@ -1,0 +1,86 @@
+@import '../../styles/variables.scss';
+@import '../../styles/package.scss';
+
+.navbar-main {
+  width: 100%;
+  span {
+    font-family: Nunito;
+  }
+}
+
+.navbar__top {
+  span {
+    color: white;
+  }
+  width: 100%;
+  background-color: $primary_dark;
+  position: absolute;
+  height: 57px;
+  .title {
+    width: 218px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .header {
+    padding-left: 1rem;
+  }
+}
+
+.menu-left {
+  border: 2px solid #f4f2f1;
+  border-bottom: 0px solid #fff;
+  transition: all 300ms linear;
+  height: 100vh;
+  width: 218px;
+  float: left;
+}
+
+.layout-body {
+  padding-top: 53px;
+}
+
+.menu-subtitle-opened {
+  justify-content: space-between;
+  display: flex;
+  padding-right: 2rem;
+}
+
+.menu-subtitle {
+  padding-top: 2em;
+  color: $primary_dark !important;
+  flex-direction: column;
+  div {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+}
+.prepend-title {
+  color: $primary_dark;
+  white-space: nowrap;
+  font-family: Nunito;
+}
+.menu-divisor {
+  width: 80%;
+  border: 1px solid #f4f2f1;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.divisor-collapse {
+  width: 20%;
+}
+.menu-collapse {
+  width: 72px !important;
+  transition: all 200ms linear;
+}
+.navbar-collapse {
+  span a {
+    display: none;
+  }
+}

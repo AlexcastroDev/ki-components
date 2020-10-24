@@ -1,0 +1,27 @@
+.user {
+    justify-content: flex-end;
+    margin-right: 1rem;
+    span {
+        font-weight: 400;
+        color: white;
+    }
+    em {
+        font-size: 10px;
+        font-weight: 800;
+        color: #ccc;
+    }
+    .detail {
+        min-width: 40px;
+        width: 40px;
+        max-width: 150px;
+    }
+    .title {
+        max-width: 150px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+.avatar-align {
+    display: contents;
+}

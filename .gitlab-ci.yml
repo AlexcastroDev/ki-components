@@ -1,0 +1,72 @@
+image: node:latest
+
+cache:
+  paths:
+    - storybook-static/
+
+after_script:
+  - echo "End Job"
+
+stages:
+  - build_doc
+  - deploy_doc
+  - deploy
+  - deploy_beta
+
+deploy:
+  stage: deploy
+  when: manual
+  script:
+    - echo '//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}'>.npmrc
+    - npm publish
+  only:
+    refs:
+      - master
+
+deploy_beta:
+  stage: deploy_beta
+  when: manual
+  script:
+    - echo '//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}'>.npmrc
+    - npm publish --tag beta
+  only:
+    refs:
+      - develop
+
+build_doc:
+  stage: build_doc
+  when: manual
+  allow_failure: false
+  script: |
+    echo "============ Installing dependencies ============"
+    yarn
+    echo "============ Building bundle ==========="
+    yarn build-storybook
+  artifacts:
+    paths:
+      - ./storybook-static
+  only:
+    refs:
+      - master
+
+.deploy_aws: &deploy_aws
+  image: garland/aws-cli-docker
+  variables:
+    GIT_STRATEGY: none
+
+deploy_doc:
+  <<: *deploy_aws
+  stage: deploy_doc
+  allow_failure: false
+  dependencies:
+    - build_doc
+  before_script:
+    - export BUCKET=${URL_PROD}
+  script: |
+    echo "============ Uploading to S3 bucket: ${BUCKET} ============"
+    aws s3 sync ./storybook-static/ s3://${BUCKET}
+    echo "============ Cleaning cache of cloudfront: ${ID_CLOUD_PROD} ============"
+    aws cloudfront create-invalidation --distribution-id ${ID_CLOUD_PROD} --paths "/*"
+  only:
+    refs:
+      - master

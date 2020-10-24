@@ -1,0 +1,51 @@
+@import '../../styles/global.scss';
+
+$icon-sm: 14px;
+$icon-md: 18px;
+$icon-lg: 22px;
+
+$icons: 'arrow-up', 'arrow-right', 'arrow-left', 'arrow-down', 'bad', 'members',
+  'users', 'question', 'dots-inline', 'dots-inline-o', 'dots-vertical',
+  'dots-vertical-o', 'filter-o', 'filter', 'close', 'logout', 'bars', 'circle',
+  'search', 'megaphone', 'kpi', 'telemedicine', 'settings', 'dashboard',
+  'clinic', 'webcam', 'file-text';
+
+@each $icon in $icons {
+  .c-#{$icon} {
+    -webkit-mask-image: url('./../../assets/icons/#{$icon}.svg');
+    mask-image: url('./../../assets/icons/#{$icon}.svg');
+  }
+}
+
+.icon {
+  display: inline-block;
+  -webkit-mask-size: cover;
+  background: #000;
+  mask-size: cover;
+}
+
+.icon-white {
+  background: #fff !important;
+}
+
+.icon-primary {
+  background: $primary_main !important;
+}
+
+.icon-sm {
+  height: $icon-sm;
+  background-size: $icon-sm;
+  width: $icon-sm;
+}
+
+.icon-md {
+  height: $icon-md;
+  background-size: $icon-md;
+  width: $icon-md;
+}
+
+.icon-lg {
+  height: $icon-lg;
+  background-size: $icon-lg;
+  width: $icon-lg;
+}

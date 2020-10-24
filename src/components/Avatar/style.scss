@@ -1,0 +1,29 @@
+.avatar {
+    vertical-align: middle;
+    background-color: #e0e0e0;
+    margin: 0 0.3rem 0 0.3rem;
+}
+.avatar__md {
+    max-width: 36px;
+    min-width: 36px;
+    height: 36px;
+}
+.rounded {
+    border-radius: 50% !important;
+}
+.square {
+    border-radius: 5px 5px 5px 5px;
+}
+.ballon-left {
+    border-radius: 20px 20px 20px 5px;
+}
+.ballon-right {
+    border-radius: 20px 20px 5px 20px;
+}
+.ballon-top-left {
+    border-radius: 5px 20px 20px 20px;
+}
+
+.ballon-top-right {
+    border-radius: 20px 5px 20px 20px;
+}
