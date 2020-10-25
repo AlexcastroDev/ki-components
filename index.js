@@ -9,12 +9,12 @@ import Profile from './src/components/Profile';
 
 export default {
   install(Vue) {
-    Vue.component('Avatar', Avatar);
-    Vue.component('Icon', Icon);
-    Vue.component('Loading', Loading);
-    Vue.component('NavBar', NavBar);
-    Vue.component('Spinner', Spinner);
-    Vue.component('Profile', Profile);
+    Vue.component('Ki-Avatar', Avatar);
+    Vue.component('Ki-Icon', Icon);
+    Vue.component('Ki-Loading', Loading);
+    Vue.component('Ki-NavBar', NavBar);
+    Vue.component('Ki-Spinner', Spinner);
+    Vue.component('Ki-Profile', Profile);
   },
 };
 
