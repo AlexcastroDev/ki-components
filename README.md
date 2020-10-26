@@ -1,8 +1,8 @@
 # Ki Components (VUE)
 
-🔥🔥🔥🔥 This is Hot, Baby 🔥🔥🔥🔥
-<a href="https://ki.alexandrocastro.dev.br/" target="_blank">See Documentation</a>
-<a href="https://ki.alexandrocastro.dev.br/#/releases" target="_blank">Releases</a>
+🔥🔥🔥🔥 This is Hot, Baby 🔥🔥🔥🔥<br><br>
+<a href="https://ki.alexandrocastro.dev.br/" target="_blank">See Documentation</a><br>
+<a href="https://ki.alexandrocastro.dev.br/#/releases" target="_blank">Releases</a><br>
 
 # Components Available
 
