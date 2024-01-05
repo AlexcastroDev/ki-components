@@ -38,7 +38,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [AlexcastroDev/ki-components](https://github.com/AlexcastroDev/ki-components)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|26<br/>Tools used|01/02/24 <br/>Report generated|
+|27<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -151,9 +151,9 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (15)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (16)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (15)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (16)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
@@ -167,6 +167,7 @@ Full tech stack [here](/techstack.md)
 |[core-js](https://www.npmjs.com/core-js)|v2.6.11|10/24/20|Alexandro castro |MIT|N/A|
 |[eslint-plugin-prettier](https://www.npmjs.com/eslint-plugin-prettier)|v3.1.1|10/24/20|Alexandro castro |MIT|N/A|
 |[eslint-plugin-vue](https://www.npmjs.com/eslint-plugin-vue)|v5.2.3|10/24/20|Alexandro castro |MIT|N/A|
+|[lint-staged](https://www.npmjs.com/lint-staged)|v9.5.0|10/24/20|Alexandro castro |MIT|N/A|
 |[node-sass](https://www.npmjs.com/node-sass)|v4.14.1|10/24/20|Alexandro castro |MIT|[CVE-2020-24025](https://github.com/advisories/GHSA-r8f7-9pfq-mjmv) (Moderate)|
 |[sass-loader](https://www.npmjs.com/sass-loader)|v9.0.3|10/24/20|Alexandro castro |MIT|N/A|
 |[vue](https://www.npmjs.com/vue)|v2.6.10|10/24/20|Alexandro castro |MIT|N/A|
